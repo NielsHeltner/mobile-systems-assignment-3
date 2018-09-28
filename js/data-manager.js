@@ -3,10 +3,10 @@ let coords;
 let fileUpload = document.getElementById('fileUpload');
 fileUpload.onchange = parseFile;
 let inputSampleSize = document.getElementById('inputSampleSize');
-inputSampleSize.value = 5;
+inputSampleSize.value = 2;
 inputSampleSize.onchange = updateFilters;
 let inputThreshold = document.getElementById('inputThreshold');
-inputThreshold.value = 0.0001;
+inputThreshold.value = 0.00001;
 inputThreshold.onchange = updateFilters;
 
 let sampleSize = inputSampleSize.value;
@@ -75,9 +75,6 @@ function filterForEach(originalCoords, filter) {
             let originalValue = filteredCoords[row][column];
             if (Math.abs(originalValue - filterValue) > threshold) {
                 filteredCoords[row][column] = filterValue;
-            }
-            else {
-                filteredCoords[row][column] = originalValue;
             }
         }
     }
