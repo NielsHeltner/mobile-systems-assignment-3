@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#map {
+    position: absolute; 
+    top:0; 
+    bottom:30px; 
+    right:0; 
+    left:0;
+    z-index:1;
+}
+#control {
+    position: absolute;
+    z-index:10;
+    bottom:5px;
+    left:5px;
+}
+#checkBoxTextGt {
+    color: red;
+    user-select: none;
+}
+#checkBoxTextPhone {
+    color: blue;
+    user-select: none;
+}
+#checkBoxTextMean {
+    color: green;
+    user-select: none;
+}
+#checkBoxTextMedian {
+    color: yellowgreen;
+    user-select: none;
+}
+#inputSampleSize {
+    width: 30px;
+}
+#inputThreshold {
+    width: 60px;
+}
+.coordText {
+    user-select:none;
+}
