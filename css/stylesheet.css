@@ -35,9 +35,6 @@ body {
 #inputSampleSize {
     width: 30px;
 }
-#inputThreshold {
-    width: 60px;
-}
 .coordText {
     user-select:none;
 }

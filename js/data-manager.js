@@ -5,16 +5,11 @@ fileUpload.onchange = parseFile;
 let inputSampleSize = document.getElementById('inputSampleSize');
 inputSampleSize.value = 5;
 inputSampleSize.onchange = updateFilters;
-let inputThreshold = document.getElementById('inputThreshold');
-inputThreshold.value = 0.00001;
-inputThreshold.onchange = updateFilters;
 
 let sampleSize = inputSampleSize.value;
-let threshold = inputThreshold.value;
 
 function updateFilters() {
     sampleSize = parseInt(inputSampleSize.value);
-    threshold = parseFloat(inputThreshold.value);
     coords['mean'] = filterMean();
     coords['median'] = filterMedian();
     drawFilter(coords);
