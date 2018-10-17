@@ -3,7 +3,7 @@ let coords;
 let fileUpload = document.getElementById('fileUpload');
 fileUpload.onchange = parseFile;
 let inputSampleSize = document.getElementById('inputSampleSize');
-inputSampleSize.value = 5;
+inputSampleSize.value = 10;
 inputSampleSize.onchange = updateFilters;
 
 let sampleSize = inputSampleSize.value;
